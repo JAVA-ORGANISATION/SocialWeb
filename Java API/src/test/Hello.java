@@ -34,7 +34,7 @@ public class Hello {
 			@QueryParam("username") String username,@QueryParam("date-of-birth") String dob,
 			@QueryParam("password") String password) {
 	
-		if(username!=null) {
+		if(username!=null && password!=null) {
 			return "registered";
 		}
 	return "registration failed";
