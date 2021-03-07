@@ -35,6 +35,7 @@ public class Hello {
 			@QueryParam("password") String password) {
 	
 		if(username!=null && password!=null) {
+			if(password.length()>=8)
 			return "registered";
 		}
 	return "registration failed";
